@@ -80,7 +80,7 @@ MatrixOne 的访问控制权限分为**系统权限**和**对象权限**，在�
 |UPDATE|对表执行 `UPDATE` 命令|
 |TRUNCATE|对表执行 `TRUNCATE TABLE` 命令|
 |DELETE|对表执行 `DELETE` 命令|
-|REFERENCE|允许将表引用为外间约束的唯一/主键表。通过 `DESCRIBE` 或 `SHOW` 命令查看表的结构|
+|REFERENCE|允许将表引用为外键约束的唯一/主键表。通过 `DESCRIBE` 或 `SHOW` 命令查看表的结构|
 |INDEX|创建删除 INDEX|
 |ALL|指定表的所有权限|
 |OWNERSHIP|指定表的所有权限，附加 `WITH GRANT OPTION`|
@@ -101,7 +101,7 @@ __Note:__ 当前 MatrixOne 中仅支持 *moadmin* 和 *accountadmin* 角色才�
 
 - **发布端**
 
-发布端，即发布需共享、同步的数据的一方。
+发布端，即发布共享、同步数据的一方。
 
 |权限 | 含义|
 |---|---|
